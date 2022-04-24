@@ -1,0 +1,8 @@
+<div class="container_users_form mt-3">
+<h2>Créer votre list</h2>
+
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name, label:"Nom de la liste" %>
+  <%= f.submit "Créer" %>
+<% end %>

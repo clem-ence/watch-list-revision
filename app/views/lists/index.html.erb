@@ -2,9 +2,11 @@ Coucou !
 
 <h1>Ma liste de film</h1>
 
+<%= link_to "Creer une liste", new_list_path %>
+
 <ul>
   <% @lists.each do |list| %>
     <% list.name %>
-    <%= link_to "Film", list_path(list) %>
+    <%= link_to list.name, list_path(list) %>
   <% end %>
 </ul>
